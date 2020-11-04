@@ -1,0 +1,495 @@
+.home-container
+  height 100%
+  width 100%
+  background #1A1C21
+  min-width 1440px
+  overflow hidden
+  .loading
+    position fixed
+    top 60px
+    width 100%
+    height 100%
+    display flex
+    align-items center
+    justify-content center
+    background rgba(0,0,0,0.9)
+    z-index 10
+    >>> .loading-tip
+      color #fff
+      margin-top 10px
+  header
+    position relative
+    display flex
+    align-items center
+    justify-content space-between
+    height 60px
+    background #202128
+    .header-back
+      width 385px
+      display flex
+      justify-content space-between
+      align-items center
+      font-size:24px;
+      opacity:0.5;
+      color:#ffffff;
+      .img
+        opacity:0.7
+        width 80px
+        height 100%
+        cursor pointer
+        &:hover
+          opacity 1
+      .full-img
+        cursor pointer
+        &:hover
+          transform scale(1.1)
+    .header-city
+      font-size:24px;
+      text-align center
+      color #fff
+      margin 0 auto
+      width calc(100% - 400px - 451px)
+      font-family: HYYakuHei-HEW, HYYakuHei;
+      > p 
+        position relative
+        top: 10px
+      .dv-decoration-5
+        margin: 0 auto
+    .header-time
+      position relative
+      font-size 14px
+      color: #dcdcdc
+    .right
+      width 451px
+      display flex
+      height 100%
+      margin-right 15px
+      align-items center
+      justify-content space-between
+      > div:first-child
+        width: 150px;
+        height 28px
+        font-size 13px
+        color: #DCDCDC;
+        overflow hidden
+        display flex
+        align-items center
+        justify-content space-between
+        border-radius: 10px
+        border: 1px solid #389BFF;
+        > p
+          text-align center
+          width 50%
+          height 28px
+          line-height 28px
+          cursor pointer
+          &:hover
+            color #fff
+        .active
+          color #fff
+          background: #4A90E2;
+  section
+    position relative
+    height calc(100% - 60px)
+  .user-data-preview
+    height 100%
+    width 100%
+    .data-overview
+      .user-details
+        background: rgba(16, 16, 21, 0.6);
+        border: 1px solid rgba(56, 155, 255, 0.25);
+        > ul
+          margin-top 20px
+          > li
+            list-style none
+            margin-bottom 25px
+            > div:first-child
+              padding 0 20px
+              display flex
+              align-items center
+              margin: 0 0 10px
+              justify-content space-between
+              > p
+                font-size: 33px;
+                color: #32A3F1;
+              > div
+                color: #4AC84A;
+                font-size 14px
+                .decline
+                  color #DA3924
+                > img
+                  position relative
+                  top 2px
+            > div:last-child
+              width: 150px;
+              height: 28px;
+              line-height 28px
+              font-size: 13px;
+              color: rgba(255, 255, 255, .7)
+              padding-left 20px
+              margin-top 5px
+              background: linear-gradient(270deg, rgba(21, 114, 213, 0) 2%, #1988FF 100%);
+      .city-ranking
+        margin-top 10px
+        min-height 250px
+        height calc(100% - 465px)
+        padding 0 20px
+        background: rgba(16, 16, 21, 0.6);
+        border: 1px solid rgba(56, 155, 255, 0.25);
+        > .content-title
+          padding-left 0
+        .ranking
+          width 100%
+          margin-top 15px
+          height calc(100% - 60px)
+    .live-status
+      > div
+        overflow: hidden;
+        margin-bottom 5px
+        background: rgba(16, 16, 21, 0.6);
+      .status-details
+        min-height 275px
+        .content
+          height calc(100% - 31px)
+          display flex
+          align-items center
+          justify-content center
+          > ul
+            display flex
+            width 90%
+            margin-top: -10px;
+            justify-content space-between
+            > li
+              width 50%
+              list-style none
+              > div
+                margin 0 auto
+              > p
+                text-align center
+                color rgba(255, 255, 255, 0.8)
+                font-size: 12px;
+              > p:nth-of-type(1)
+                font-size: 14px;
+                margin-bottom 20px
+              > p:nth-of-type(2)
+                color #389BFF
+                font-size 26px
+                margin-bottom 5px
+      .portrait-crowd
+        min-height 270px
+        .content
+          height calc(100% - 31px)
+          display flex
+          align-items center
+          justify-content space-between
+          .portrait
+            width 125px
+            margin 0 0 0 25px
+            display flex
+            justify-content space-between
+            img
+              display block
+              height 61px
+              margin 0 auto 13px
+            p
+              font-size 12px
+              text-align center
+              color rgba(255, 255, 255, .6)
+            p:nth-of-type(2)
+              margin-top 3px
+          > div:nth-of-type(2)
+            width 270px
+            height 180px
+      .channel-proportion
+        min-height 273px
+        margin-bottom 0
+        .content
+          height calc(100% - 31px)
+          display flex
+          align-items center
+  .device-data-preview
+    height 100%
+    width 100%
+    .device-state
+      .online-rate
+        background: rgba(16, 16, 21, 0.6);
+        border: 1px solid rgba(56, 155, 255, 0.25);
+        /deep/ .dv-digital-flop
+          margin-top 10px
+        /deep/ .active-ring-name
+          font-size 15px !important
+          margin-top -1px
+          color rgba(255, 255, 255, 0.7)
+        .footer
+          margin-bottom 25px
+          overflow hidden
+          > ul 
+            display flex
+            justify-content space-around
+            > li
+              list-style none
+              color rgba(255, 255, 255, 0.7)
+              font-size 14px
+              text-align center
+              > p:first-child
+                color red
+                font-size 33px
+            .d-off .number-scroll span
+              color red 
+            > li:first-child > p:first-child
+              color #4a90e2
+      .quantity-ranking
+        height calc(100% - 333px)
+        margin-top 10px
+        background: rgba(16, 16, 21, 0.6);
+        border: 1px solid rgba(56, 155, 255, 0.25);
+        /deep/ .scroll-table
+          margin 10px 0 0 10px
+          width 349px
+          height calc(100% - 50px)
+    .data-proportion
+      background: rgba(16, 16, 21, 0.6);
+      border: 1px solid rgba(56, 155, 255, 0.25);
+      > div
+        height calc(100% - 31px)
+        > p
+          color #4a90e2
+          padding-left 20px
+          margin-bottom 5px
+      .real-time-Warning
+        overflow: hidden;
+        min-height 315px
+        /deep/ .scroll-table
+          height 270px
+          width 430px
+          margin 5px 0 0 10px
+          .ceil
+            font-size 13px
+      .model-type, .proportion-type
+        min-height 260px
+        > div
+          height calc(100% - 31px)
+          display flex
+          align-items center
+          justify-content center
+          > div
+            width 100%
+    .right-layout
+      height calc(100% - 22px)
+    .device-count > p:nth-of-type(2)::before
+      background: #FF6A00;
+    /deep/ .city-popup .city-popover > div > div:nth-of-type(2) > p:nth-of-type(2)::before
+      background: #FF6A00 !important;
+  .left-layout
+    position absolute
+    left 15px
+    top 10px
+    z-index 2
+    width 370px
+    overflow-y auto
+    height calc(100% - 20px)
+    &::-webkit-scrollbar
+      display: none
+  .right-layout
+    position absolute
+    right 15px
+    top 8px
+    z-index 2
+    width 450px
+    height calc(100% - 20px)
+    overflow-y auto
+    &::-webkit-scrollbar
+      display: none
+  .content-title
+    color #389BFF
+    font-weight 600
+    margin-top 10px
+    font-size 16px
+    padding-left 20px
+    &::before
+      content ' '
+      width: 10px;
+      height: 10px;
+      margin-right 6px
+      display: inline-block;
+      border-radius 50%
+      background: #389BFF;
+  #map
+    position relative
+    z-index 1
+  .data-info
+    position absolute
+    left 385px
+    right 510px
+    top 50px
+    bottom 0
+    margin 0 auto
+    z-index 1
+    height 100px
+    width calc(100% - 370px - 450px - 32px)
+    ul
+      max-width 900px
+      // min-width 810px
+      margin 0 auto
+      display flex
+      justify-content space-around
+      > li
+        // min-width 270px
+        width 33%
+        list-style none
+        text-align center
+        div
+          color #ccc
+          margin-bottom 5px
+        div:first-child
+          position relative
+          color #4a90e2
+          font-size 36px
+          font-weight: 600;
+          height 40px
+          // overflow hidden
+          // padding-left 60px
+          display inline-flex
+          align-items center
+          justify-content: center;
+          .percentage
+            position absolute
+            right -60px
+            width 60px
+            display flex
+            align-items: center
+            img
+              padding: 1px 2px 0 10px;
+            .span
+              color #4AC84A
+              font-size 12px
+            .decline
+              color #DA3924
+  /deep/ .scroll-table
+    .header-item
+      color #4a90e2
+      opacity 0.9
+      font-size 14px
+    .rows .row-item .ceil
+      .index
+        display inline-block
+        width:18px;
+        height:18px;
+        line-height 18px
+        text-align center
+        color #fff
+        padding 0
+        font-size 12px !important
+        border-radius:100%;
+      .indexY
+        background #f5a623
+      .indexG
+        background #389bff
+      > span
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis
+  /deep/ .city-popup
+    .l7-popup-tip
+      border-bottom-width: 0;
+      border-top-color: rgba(34, 86, 178, 0.7);
+    .l7-popup-content
+      width: 250px;
+      height: 125px;
+      background: rgba(34, 86, 178, 0.7);
+      border-radius: 6px;
+      border: 1px solid rgba(56, 155, 255, 0.25);
+      .city-popover
+        .popover-title
+          color #fff
+          font-size: 12px;
+          line-height 20px
+        > div
+          display flex
+          //justify-content space-between
+          > div
+            color #fff
+            font-size 12px
+          > div:nth-of-type(1)
+            position relative
+            width 120px
+            height 120px
+            .tips
+              width 50px
+              height 50px
+              position absolute
+              left 0
+              right 0
+              top 0
+              bottom 0
+              margin auto
+              font-size 12px
+              text-align center
+              > p:first-child
+                margin-top 7px
+          > div:nth-of-type(2)
+            margin-left 5px
+            > p
+              margin-bottom 5px
+              font-size 12px
+              &::before
+                content ' '
+                width: 8px;
+                height: 8px;
+                display: inline-block;
+                margin-right 5px
+                border-radius 50%
+            > p:nth-of-type(1)
+              margin-top 25px
+              &::before
+                background: #3AACF3;
+            > p:nth-of-type(2)::before
+              background: #5AD8A6;
+            > p:nth-of-type(3)::before
+              background: #FF6A00;
+        .device-online
+          margin 23px 0 -20px
+  .flop-figure
+    position: relative;
+    display flex
+    width 23px
+    height 100%
+    color #4a90e2
+    line-height 23px
+    overflow hidden
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    i
+      position: absolute;
+      font-style normal
+      transition: transform 0.6s ease-in-out;
+      letter-spacing: 10px;
+  .user-flop-box
+    height 36px
+    overflow hidden
+    > div:first-child
+      height 34px
+      overflow hidden
+      display flex
+      align-items center
+      justify-content: center;
+      > .flop-figure
+        width 22px
+        > i
+          color #32A3F1
+          font-size 35px
+      > .flop-comma
+        > span
+          left 2px
+          color: #32a3f1;
+          font-size 34px
+  /deep/ .l7-bottom
+    display none
+  .number-scroll
+    position relative
+    color #4a90e2
+    font-size 36px
+    height 40px
+    display inline-flex
+    align-items center
+    justify-content: center;
