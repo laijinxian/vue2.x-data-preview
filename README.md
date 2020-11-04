@@ -4,7 +4,7 @@
 yarn install \ yarn serve
 ```
 
-原文： [本人github文章](https://github.com/laijinxian/vue2.x-data-preview)
+原文： [掘金文章](https://juejin.im/post/6891179944018182158/)
 
 关注公众号： 微信搜索 `web全栈进阶` ; 收货更多的干货
 
